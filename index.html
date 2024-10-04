@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Audio element -->
+    <audio id="audioPlayer" src="091195/kckc.mp3" autoplay loop>
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Automatically play the music
+        window.onload = function() {
+            var audio = document.getElementById('audioPlayer');
+            audio.play().catch(function(error) {
+                console.log("Playback prevented:", error);
+            });
+        };
+    </script>
+</body>
+</html>
     <meta charset="UTF-8">
     <title>Fann DarkNET</title>
     <meta name="google" content="notranslate" />
